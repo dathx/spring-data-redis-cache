@@ -1,12 +1,12 @@
 package com.redis.service.pubsub;
 
 import com.redis.config.RedisPubSubConfig;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class OrderPublisher {
     private final StringRedisTemplate redisTemplate;
 
